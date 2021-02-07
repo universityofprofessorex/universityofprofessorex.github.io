@@ -38,20 +38,41 @@ email: professorex.university@gmail.com
 # header-img:       img/home-bg.jpg
 description: > # this means to ignore newlines until "baseurl:"
   ℙ𝕣𝕠𝕗𝕖𝕤𝕤𝕠𝕣 𝔼𝕩 𝕄𝕖𝕞𝕖s
+author:             iamprofessorex
+baseurl:            "/universityofprofessorex-blog"
+url:                "https://universityofprofessorex.github.io"
 
-baseurl: "" # the subpath of your site, e.g. /blog
+
+# baseurl: "" # the subpath of your site, e.g. /blog
 #Your site's domain goes here. Leave localhost server or blank when working locally.
-url: "https://iamprofessorex.com" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "https://iamprofessorex.com" # the base hostname & protocol for your site, e.g. http://example.com
 # url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: iamprofessorex
 github_username:  iamprofessorex
-# linkedin_username: iamprofessorex
+facebook_username:  iamprofessorex
+instagram_username:  iamprofessorex
+linkedin_username:
+
+
+# # Build settings
+# markdown: kramdown
+# theme: minima
+# plugins:
+#   - jekyll-feed
+
+# Add your google-analytics ID here to activate google analytics
+google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
 
 # Build settings
-markdown: kramdown
-theme: minima
+markdown:           kramdown
+paginate:           5
+# paginate_path:      "/posts/page:num/"
+paginate_path:      "/blog/:year/:month/:day/:title/"
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+
 
 
 # disqus:
@@ -105,7 +126,7 @@ plugins:
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 # permalink:  /:year/:month/:day/:title/
-permalink:  /blog/:year/:month/:day/:title/
+# permalink:  /blog/:year/:month/:day/:title/
 
 # kramdown:
 #   auto_ids: true

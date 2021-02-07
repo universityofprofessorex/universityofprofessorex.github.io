@@ -27,3 +27,12 @@ jekyll-watch-drafts:
 
 install-editor-conig-lint:
 	npm install -g eclint
+
+brspec:
+	bundle exec rspec
+
+biv:
+	bundle install --path .vendor
+
+cspec:
+	bundle exec rspec --color --format documentation
