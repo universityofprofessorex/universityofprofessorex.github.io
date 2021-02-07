@@ -1,0 +1,18 @@
+{
+  "files.exclude": {
+    "_site": "explorerExcludedFiles",
+    "!.bundle/config": "explorerExcludedFiles",
+    ".DS_Store": "explorerExcludedFiles",
+    ".idea": "explorerExcludedFiles",
+    ".jekyll-metadata": "explorerExcludedFiles",
+    ".sass-cache": "explorerExcludedFiles",
+    "*.bundle": "explorerExcludedFiles",
+    "*.gem": "explorerExcludedFiles",
+    "*.sublime-project": "explorerExcludedFiles",
+    "*.sublime-workspace": "explorerExcludedFiles",
+    "*.vendor": "explorerExcludedFiles",
+    "codekit-config.json": "explorerExcludedFiles",
+    "Gemfile.lock": "explorerExcludedFiles",
+    "node_modules": "explorerExcludedFiles"
+  }
+}
