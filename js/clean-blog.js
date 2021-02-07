@@ -963,11 +963,11 @@ $('#name').focus(function() {
     }
 
     /**
-     * Thanks to Jason Bunting via StackOverflow.com
-     *
-     * http://stackoverflow.com/questions/359788/how-to-execute-a-javascript-function-when-i-have-its-name-as-a-string#answer-359910
-     * Short link: http://tinyurl.com/executeFunctionByName
-     **/
+    * Thanks to Jason Bunting via StackOverflow.com
+    *
+    * http://stackoverflow.com/questions/359788/how-to-execute-a-javascript-function-when-i-have-its-name-as-a-string#answer-359910
+    * Short link: http://tinyurl.com/executeFunctionByName
+    **/
     function executeFunctionByName(functionName, context /*, args*/ ) {
         var args = Array.prototype.slice.call(arguments).splice(2);
         var namespaces = functionName.split(".");
@@ -999,21 +999,21 @@ $('#name').focus(function() {
 
 // make all images responsive
 $(function() {
-	$("img").addClass("img-responsive");
+    $("img").addClass("img-responsive");
 });
 
 // responsive tables
 $(document).ready(function() {
-	$("table").wrap("<div class='table-responsive'></div>");
-	$("table").addClass("table");
+    $("table").wrap("<div class='table-responsive'></div>");
+    $("table").addClass("table");
 });
 
 // responsive embed videos
-$(document).ready(function () { 
+$(document).ready(function () {
     $('iframe[src*="youtube.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
-	$('iframe[src*="youtube.com"]').addClass('embed-responsive-item');
+    $('iframe[src*="youtube.com"]').addClass('embed-responsive-item');
     $('iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
-	$('iframe[src*="vimeo.com"]').addClass('embed-responsive-item');
+    $('iframe[src*="vimeo.com"]').addClass('embed-responsive-item');
 });
 
 // Floating label headings for the contact form
