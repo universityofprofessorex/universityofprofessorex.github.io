@@ -14,8 +14,14 @@ baseurl := $(shell { \cat _config.yml | yq e '.baseurl' -; })
 open-site:
 	./bin/open-browser.py ${websiteuri}${baseurl}/
 
-bundle:
+bundle-all:
+	bundle install --with jekyll-plugins --with test
+
+bundle-install:
 	bundle install
+
+bundle-update:
+	bundle update
 
 test:
 	bundle install --with test
