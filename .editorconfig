@@ -45,7 +45,7 @@ indent_style = space
 insert_final_newline = ignore
 
 # 2 spaces indenting
-[*.{coffee,css,html,html.twig,rb,scss,yml,yaml}]
+[*.{coffee,css,html,html.twig,rb,scss,yml,yaml,gemspec}]
 indent_size = 2
 indent_style = space
 
@@ -55,7 +55,7 @@ indent_size = 2
 indent_style = space
 
 # The YAML files contain newlines inconsistently
-[*.{coffee,css,html,html.twig,rb,scss,yml,yaml}]
+[*.{coffee,css,html,html.twig,rb,scss,yml,yaml,gemspec}]
 indent_size = 2
 insert_final_newline = ignore
 indent_style = space
@@ -107,5 +107,5 @@ indent_style = space
 indent_size = 4
 
 # Remove empty lines
-[*.{coffee,js,json,php,md,xml,yml, yaml}]
+[*.{coffee,js,json,php,md,xml,yml,yaml,gemspec}]
 trim_trailing_whitespace = true

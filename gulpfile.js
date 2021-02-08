@@ -6,16 +6,16 @@ gulp.task('vendor', function(cb) {
 
   // Start Bootstrap Clean Blog SCSS
   gulp.src([
-    './node_modules/startbootstrap-clean-blog/scss/**/*'
+    './node_modules/universityofprofessorex-blog/scss/**/*'
     ])
-    .pipe(gulp.dest('./assets/vendor/startbootstrap-clean-blog/scss'))
+    .pipe(gulp.dest('./assets/vendor/universityofprofessorex-blog/scss'))
 
   // Start Bootstrap Clean Blog JS
   gulp.src([
-    './node_modules/startbootstrap-clean-blog/js/clean-blog.min.js',
-    './node_modules/startbootstrap-clean-blog/js/jqBootstrapValidation.js'
+    './node_modules/universityofprofessorex-blog/js/clean-blog.min.js',
+    './node_modules/universityofprofessorex-blog/js/jqBootstrapValidation.js'
     ])
-    .pipe(gulp.dest('./assets/vendor/startbootstrap-clean-blog/js'))
+    .pipe(gulp.dest('./assets/vendor/universityofprofessorex-blog/js'))
 
   // Bootstrap
   gulp.src([

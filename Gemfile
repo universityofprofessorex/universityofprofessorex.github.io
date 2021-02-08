@@ -1,8 +1,11 @@
 source "https://rubygems.org"
 
-gem "jekyll", ">= 3.8.5"
-gem "rake"
-gem 'github-pages'
+gem "jekyll", ">= 3.8.5"benv rehash
+gem "rake", "~> 12.0"
+# gem 'github-pages'
+
+# spec.add_development_dependency "bundler", "~> 2.0.1"
+# spec.add_development_dependency "rake", "~> 12.0"
 
 group :test do
   gem 'rspec', :require => 'spec'
@@ -13,6 +16,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem "jekyll-paginate", "~> 1.1.0"
   gem "jekyll-sitemap"
+  gem "github-pages"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
