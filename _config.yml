@@ -1,40 +1,8 @@
 # Site settings
-# title: Clean Blog
-# header-img: img/home-bg.jpg
-# email: your-email@yourdomain.com
-# description: "Write your site description here. It will be used as your sites meta description as well!"
-# baseurl: "/universityofprofessorex-blog-jekyll"
-# url: "http://yourdomain.com"
-# twitter_username: SBootstrap
-# github_username:  davidtmiller
-# facebook_username:  IronSummitMedia
-
-# # Build settings
-# markdown: kramdown
-# highlighter: pygments
-# permalink: pretty
-# paginate: 5
-# exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
-title:            University of ProfessorEX
-tagline: LORD 7th THE MEMEKAGE
-email: professorex.university@gmail.com
+title:            "University of ProfessorEX"
+tagline: "LORD 7th THE MEMEKAGE"
+email: "professorex.university@gmail.com"
+encoding: UTF-8
 # header-img:       img/home-bg.jpg
 description: > # this means to ignore newlines until "baseurl:"
   ℙ𝕣𝕠𝕗𝕖𝕤𝕤𝕠𝕣 𝔼𝕩 𝕄𝕖𝕞𝕖s
@@ -53,13 +21,6 @@ github_username:  iamprofessorex
 facebook_username:  iamprofessorex
 instagram_username:  iamprofessorex
 linkedin_username:
-
-
-# # Build settings
-# markdown: kramdown
-# theme: minima
-# plugins:
-#   - jekyll-feed
 
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
