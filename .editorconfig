@@ -19,14 +19,14 @@ charset = utf-8
 [*.{coffee,css,htaccess,html,js,json,md,php,rb,scss,twig,xml,yml}]
 end_of_line = lf
 
-[{.bowerrc,.editorconfig,.gitignore,Capfile,Gemfile,Sumofile}]
+[{.bowerrc,.editorconfig,.gitignore,Capfile,Gemfile,Rakefile,Sumofile}]
 end_of_line = lf
 
 # Make sure we have an empty line at the end
 [*.{coffee,htaccess,html,html.twig,js,md,php}]
 insert_final_newline = true
 
-[{.bowerrc,.editorconfig,.gitignore,Capfile,Gemfile,Sumofile}]
+[{.bowerrc,.editorconfig,.gitignore,Capfile,Gemfile,Rakefile,Sumofile}]
 insert_final_newline = true
 
 ## Charset section
@@ -50,7 +50,7 @@ indent_size = 2
 indent_style = space
 
 # Use 4 spaces for the HTML files
-[{.bowerrc,.gitignore,Capfile,Gemfile}]
+[{.bowerrc,.gitignore,Capfile,Gemfile,Rakefile}]
 indent_size = 2
 indent_style = space
 
