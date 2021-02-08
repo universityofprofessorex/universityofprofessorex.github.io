@@ -65,3 +65,12 @@ cspec:
 
 lint-fix:
 	eclint fix *
+
+rake-list:
+	bundle exec rake -T
+
+dev:
+	bundle exec rake env:dev
+
+pro:
+	bundle exec rake env:pro

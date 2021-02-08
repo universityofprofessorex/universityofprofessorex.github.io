@@ -22,6 +22,8 @@ gem "jekyll-redirect-from", versions['jekyll-redirect-from']
 group :test do
   gem 'rspec', :require => 'spec'
   gem "rubocop"
+  gem "rubocop-rake"
+  gem "rubocop-rspec"
 end
 
 # group :jekyll_plugins do
