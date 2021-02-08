@@ -5,12 +5,14 @@ guard-%:
 
 shasumExec := $(shell { command -v sha256sum || command -v sha1 || command -v shasum || command -v sha1sum; })
 websiteuri := $(shell { \cat _config.yml | yq e '.url' -; })
+baseurl := $(shell { \cat _config.yml | yq e '.baseurl' -; })
+
 
 # https://www.npmjs.com/package/eclint
 
 .PHONY: open-site
 open-site:
-	./bin/open-browser.py ${websiteuri}
+	./bin/open-browser.py ${websiteuri}${baseurl}/
 
 bundle:
 	bundle install
