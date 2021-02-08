@@ -17,7 +17,7 @@ This repository holds the official Jekyll version of the Clean Blog theme on Sta
 ### Contributor guide
 
 1. Install `rbenv` or `rvm`
-2. install ruby 2.6.6 and set it as the global ruby.
+2. install ruby 2.6.6 and set it as the global ruby. see [Rbenv on MacOS w/ homebrew](### Rbenv on MacOS w/ homebrew) if you are on OSX.
 3. `gem update --system`
 4. `bundle config build.ffi --enable-system-libffi`
 5. run `env NOKOGIRI_USE_SYSTEM_LIBRARIES=true bundle install --path .vendor` to insall all ruby gem dependencies in a vendored directory located in `.vendor`
