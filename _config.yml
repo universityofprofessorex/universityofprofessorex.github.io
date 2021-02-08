@@ -39,6 +39,7 @@ email: professorex.university@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   ℙ𝕣𝕠𝕗𝕖𝕤𝕤𝕠𝕣 𝔼𝕩 𝕄𝕖𝕞𝕖s
 author:             iamprofessorex
+# baseurl:            "/universityofprofessorex-blog"
 baseurl:            "/universityofprofessorex-blog"
 # url:                "https://universityofprofessorex.github.io"
 
