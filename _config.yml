@@ -13,7 +13,7 @@ baseurl:            "/"
 # baseurl: "" # the subpath of your site, e.g. /blog
 #Your site's domain goes here. Leave localhost server or blank when working locally.
 # the base hostname & protocol for your site, e.g. http://example.com
-url: "http://localhost:4000"
+url: "http://iamprofessorex.com"
 twitter_username: iamprofessorex
 github_username:  iamprofessorex
 facebook_username:  iamprofessorex
