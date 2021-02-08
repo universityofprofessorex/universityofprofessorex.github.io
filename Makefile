@@ -74,3 +74,6 @@ dev:
 
 pro:
 	bundle exec rake env:pro
+
+gh:
+	bundle exec rake env:gh

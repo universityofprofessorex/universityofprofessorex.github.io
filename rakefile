@@ -14,7 +14,7 @@ namespace :env do
   end
 
   desc 'Sets the configuration for github mode.'
-  task :pro do
+  task :gh do
     edit_config 'url', '"https://universityofprofessorex.github.io/"'
   end
 
