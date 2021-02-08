@@ -4,6 +4,13 @@ guard-%:
 	@if [ -z "${${*}}" ]; then echo "REQUIRED env-var $* not set" && exit 1; fi
 
 shasumExec := $(shell { command -v sha256sum || command -v sha1 || command -v shasum || command -v sha1sum; })
+websiteuri := $(shell { \cat _config.yml | yq e '.url' -; })
+
+# https://www.npmjs.com/package/eclint
+
+.PHONY: open-site
+open-site:
+	./bin/open-browser.py ${websiteuri}
 
 bundle:
 	bundle install
@@ -19,6 +26,8 @@ jekyll:
 
 jekyll-watch:
 	bundle exec jekyll serve --watch
+
+serve-watch: jekyll-watch
 
 jekyll-watch-drafts:
 	bundle exec jekyll serve --watch --drafts
