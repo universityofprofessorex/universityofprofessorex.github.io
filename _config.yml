@@ -3,7 +3,7 @@
 # header-img: img/home-bg.jpg
 # email: your-email@yourdomain.com
 # description: "Write your site description here. It will be used as your sites meta description as well!"
-# baseurl: "/startbootstrap-clean-blog-jekyll"
+# baseurl: "/universityofprofessorex-blog-jekyll"
 # url: "http://yourdomain.com"
 # twitter_username: SBootstrap
 # github_username:  davidtmiller
@@ -38,102 +38,40 @@ email: professorex.university@gmail.com
 # header-img:       img/home-bg.jpg
 description: > # this means to ignore newlines until "baseurl:"
   ℙ𝕣𝕠𝕗𝕖𝕤𝕤𝕠𝕣 𝔼𝕩 𝕄𝕖𝕞𝕖s
+author:             iamprofessorex
+# baseurl:            "/universityofprofessorex-blog"
+baseurl:            "/blog"
+# url:                "https://universityofprofessorex.github.io"
 
-baseurl: "" # the subpath of your site, e.g. /blog
+
+# baseurl: "" # the subpath of your site, e.g. /blog
 #Your site's domain goes here. Leave localhost server or blank when working locally.
-url: "https://iamprofessorex.com" # the base hostname & protocol for your site, e.g. http://example.com
-# url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "https://iamprofessorex.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: iamprofessorex
 github_username:  iamprofessorex
-# linkedin_username: iamprofessorex
+facebook_username:  iamprofessorex
+instagram_username:  iamprofessorex
+linkedin_username:
+
+
+# # Build settings
+# markdown: kramdown
+# theme: minima
+# plugins:
+#   - jekyll-feed
+
+# Add your google-analytics ID here to activate google analytics
+google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
 
 # Build settings
-markdown: kramdown
-theme: minima
+markdown:           kramdown
+paginate:           5
+# paginate_path:      "/posts/page:num/"
+paginate_path:      "/blog/:year/:month/:day/:title/"
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
 
-
-# disqus:
-#   shortname: iamprofessorex
-# logo:             logo.jpg
-# disqus_shortname: iamprofessorex
-
-# #default_bg:       #SOME-IMAGE.JPG
-# search:           true
-# share:            true
-# # Read Time is a calculator tp provide post read-time based on word count. Usage is recommended.
-# readtime:         true
-# # Turn on or off the fin animations in the header and footer
-# animated_fins:    true
-# # Specify the fin color in RGB value
-# fin_color:        "255,255,255"
-# #Your site's domain goes here. Leave localhost server or blank when working locally.
-# # url:              http://iamprofessorex.com
-
-# # Owner/author information
-# owner:
-#   name:           Tony Dark
-#   avatar:         code-bevatar.jpg
-#   description:    "Making Behance More Awesome"
-#   email:          iamprofessorex@theblacktonystark.com
-
-#   # Social networking links are used in author-bio sidebar. Update and remove as you like.
-#   twitter:        iamprofessorex
-#   github:         iamprofessorex
-#   facebook_username: iamiamprofessorex
-#   # google_plus: 112974790056521154109
-
-#   # For Google Authorship https://plus.google.com/authorship
-#   # google plus id, include the '+', eg +mmistakes
-#   google_plus:    #+joesepi
-
-# # Analytics and webmaster tools stuff goes here
-# google_analytics: UA-61421111-1
-# google_verify:
-# # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-# bing_verify:
-
-# # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-# timezone:    America/New_York
-# future:      true
-# highlighter: pygments
-# markdown:    kramdown
-# paginate:    6
-# paginate_path: "page:num"
-# excerpt_separator: <!--more-->
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-# permalink:  /:year/:month/:day/:title/
-permalink:  /blog/:year/:month/:day/:title/
-
-# kramdown:
-#   auto_ids: true
-#   footnote_nr: 1
-#   entity_output: as_char
-#   toc_levels: 1..6
-#   use_coderay: false
-
-# include: [".htaccess"]
-# exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
-
-# defaults:
-#   -
-#     scope:
-#       path: ""
-#       type: "posts"
-#     values:
-#       layout: "post"
-#       comments: true
-#       share: true
-#   -
-#     scope:
-#       path: ""
-#       type: "drafts"
-#     values:
-#       layout: "post"
-#       comments: true
-#       share: true
-
-# TODO: Replace with your own
-# google_analytics: UA-104959730-1
+exclude: [ ".vscode" ]

@@ -1,22 +1,38 @@
 {
-    "name": "universityofprofessorex-blog",
     "title": "University of Professorex Blog",
+    "name": "universityofprofessorex-blog",
     "version": "1.0.0",
-    "homepage": "https://iamprofessorex.com",
+    "description": "Clean Blog is a Medium inspired blog theme for Bootstrap.",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://github.com/universityofprofessorex/universityofprofessorex.github.io",
+    "bugs": {
+        "url": "https://github.com/universityofprofessorex/universityofprofessorex.github.io/issues",
+        "email": "professorex.university@gmail.com"
+    },
+    "license": "MIT",
     "author": "iamprofessorex",
-    "license": {
-        "type": "Apache 2.0",
-        "url": "https://github.com/universityofprofessorex/universityofprofessorex/blob/gh-pages/LICENSE"
-    },
-    "devDependencies": {
-        "grunt": "~0.4.5",
-        "grunt-contrib-less": "~0.11.4",
-        "grunt-contrib-watch": "~0.6.1",
-        "grunt-banner": "~0.2.3",
-        "grunt-contrib-uglify": "~0.5.1"
-    },
+    "contributors": [
+        "Professor Ex (https://universityofprofessorex.github.io/)"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/universityofprofessorex/universityofprofessorex.github.io.git"
+    },
+    "dependencies": {
+        "bootstrap": "4.5.0",
+        "font-awesome": "4.7.0",
+        "jquery": "3.5.1",
+        "universityofprofessorex-blog": "5.0.9"
+    },
+    "devDependencies": {
+        "browser-sync": "2.26.7",
+        "gulp": "4.0.2"
     }
 }
