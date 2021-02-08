@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", ">= 3.8.5"benv rehash
+gem "jekyll", ">= 3.8.5"
 gem "rake", "~> 12.0"
 # gem 'github-pages'
 
