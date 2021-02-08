@@ -14,6 +14,57 @@ This repository holds the official Jekyll version of the Clean Blog theme on Sta
 
 ## Installation & Setup
 
+### Contributor guide
+
+1. Install `rbenv` or `rvm`
+2. install ruby 2.6.6 and set it as the global ruby.
+3. `gem update --system`
+4. `bundle config build.ffi --enable-system-libffi`
+5. run `env NOKOGIRI_USE_SYSTEM_LIBRARIES=true bundle install --path .vendor` to insall all ruby gem dependencies in a vendored directory located in `.vendor`
+6. rbenv rehash
+7. Set jekyll to dev mode by running `make dev`, this makes the server available on localhost:4000
+8. `make serve-watch` to start up jekyll
+9. Navigate to http://localhost:4000/
+
+### Rbenv on MacOS w/ homebrew
+
+Set the following before compiling ruby w/ rbenv:
+
+```
+enable_compile_flags() {
+  # SOURCE: https://github.com/jiansoung/issues-list/issues/13
+  # Fixes: zipimport.ZipImportError: can't decompress data; zlib not available
+  export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
+  export PATH="/usr/local/opt/bzip2/bin:$PATH"
+  export PATH="/usr/local/opt/ncurses/bin:$PATH"
+  export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+  # SOURCE: https://github.com/jiansoung/issues-list/issues/13
+  # Fixes: zipimport.ZipImportError: can't decompress data; zlib not available
+  export LDFLAGS="${LDFLAGS} -L/usr/local/opt/tcl-tk/lib"
+  export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/tcl-tk/include"
+  export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
+  export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/zlib/include"
+  export LDFLAGS="${LDFLAGS} -L/usr/local/opt/sqlite/lib"
+  export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/sqlite/include"
+  export LDFLAGS="${LDFLAGS} -L/usr/local/opt/libffi/lib"
+  export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/libffi/include"
+  export LDFLAGS="${LDFLAGS} -L/usr/local/opt/bzip2/lib"
+  export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/bzip2/include"
+  export LDFLAGS="${LDFLAGS} -L/usr/local/opt/ncurses/lib"
+  export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/ncurses/include"
+  export LDFLAGS="${LDFLAGS} -L/usr/local/opt/openssl@1.1/lib"
+  export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/openssl@1.1/include"
+  export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
+  export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/sqlite/lib/pkgconfig"
+  export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/tcl-tk/lib/pkgconfig"
+  export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/libffi/lib/pkgconfig"
+  export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/ncurses/lib/pkgconfig"
+  export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/openssl@1.1/lib/pkgconfig"
+}
+```
+
+then run `enable_compile_flags`. This will ensure that ruby is compiled against the libraries you installed w/ homebrew.
+
 ### Using RubyGems
 
 When installing the theme using RubyGems, demo images, posts, and pages are not included. Follow the instructions below for complete setup.
