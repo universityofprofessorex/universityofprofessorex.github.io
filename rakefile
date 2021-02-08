@@ -1,6 +1,7 @@
 def edit_config(name, value)
   config = File.read('_config.yml')
   regexp = Regexp.new('(^\s*' + name + '\s*:\s*)(\S+)(\s*)$')
+  puts "debug regexp: #{regexp}"
   config.sub!(regexp, '\1' + value + '\3')
   File.open('_config.yml', 'w') { |f| f.write(config) }
 end
@@ -8,12 +9,13 @@ end
 namespace :env do
   desc 'Sets the configuration for development mode.'
   task :dev do
-    edit_config 'url', 'http://localhost:4000'
+    # puts "Switching to dev: #{filename}"
+    edit_config 'url', '"http://localhost:4000"'
   end
 
   desc 'Sets the configuration for production mode.'
   task :pro do
-    edit_config 'url', 'http//iamprofessorex.com'
+    edit_config 'url', '"http://iamprofessorex.com"'
   end
 end
 
